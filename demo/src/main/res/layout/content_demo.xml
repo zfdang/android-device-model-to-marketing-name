@@ -11,10 +11,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.zfdang.androiddevicemodeltomarketingname.DemoActivity"
-    tools:showIn="@layout/activity_demo">
+    tools:showIn="@layout/activity_demo"
+    android:gravity="center_horizontal">
 
     <TextView
+        android:id="@+id/device_marketing_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="Device Marketing Name"
+        />
+
+    <TextView
+        android:id="@+id/device_marketing_name_with_branding"
+        android:layout_below="@+id/device_marketing_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Marketing Name with Branding"
+        />
+
+
 </RelativeLayout>
+
