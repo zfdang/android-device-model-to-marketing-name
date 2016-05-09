@@ -1,6 +1,8 @@
 # Android Device Model to Marketing Name
 
-Providing Human-friendly Name for Android Device
+Providing Human-friendly Name for Android Devices
+
+It will convert Build.MODEL to the marketing name of the device, for example "SM-G9200" to "Galaxy S6".
 
 # How to use this library in your application
 
