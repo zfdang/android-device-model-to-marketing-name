@@ -14,8 +14,11 @@ Add "device-model-to-marketing-name" as dependency to your project:
 
 ## 2. Use it in your application:
 
-  String marketingName = DeviceMarketingName.getInstance(this).getDeviceMarketingName(true);
-
+    // Build.MODEL = "SM-G9200"
+    String marketingName = DeviceMarketingName.getInstance(this).getDeviceMarketingName(false);
+    // marketingName is now "Galaxy S6"
+    String marketingNameWithBrand = DeviceMarketingName.getInstance(this).getDeviceMarketingName(true);
+    // marketingNameWithBrand is now "Samsung-Galaxy S6"
 
 ## 3. Contribute to this library
 
