@@ -12,20 +12,30 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.zfdang.androiddevicemodeltomarketingname.DemoActivity"
     tools:showIn="@layout/activity_demo"
-    android:gravity="center_horizontal">
+    >
+
+    <TextView
+        android:id="@+id/device_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Device Build.MODEL"/>
 
     <TextView
         android:id="@+id/device_marketing_name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/device_model"
+        android:gravity="center_horizontal"
         android:text="Device Marketing Name"
         />
 
     <TextView
         android:id="@+id/device_marketing_name_with_branding"
-        android:layout_below="@+id/device_marketing_name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/device_marketing_name"
+        android:gravity="center_horizontal"
         android:text="Device Marketing Name with Branding"
         />
 

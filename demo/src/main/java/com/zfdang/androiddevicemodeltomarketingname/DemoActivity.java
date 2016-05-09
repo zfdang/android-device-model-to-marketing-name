@@ -1,5 +1,6 @@
 package com.zfdang.androiddevicemodeltomarketingname;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -31,11 +32,14 @@ public class DemoActivity extends AppCompatActivity {
         });
 
 
-        TextView tvb = (TextView) findViewById(R.id.device_marketing_name_with_branding);
-        tvb.setText(DeviceMarketingName.getInstance(this).getDeviceMarketingName(true));
+        TextView model = (TextView) findViewById(R.id.device_model);
+        model.setText(Build.MODEL);
 
-        TextView tv = (TextView) findViewById(R.id.device_marketing_name);
-        tv.setText(DeviceMarketingName.getInstance(this).getDeviceMarketingName(false));
+        TextView marketingName = (TextView) findViewById(R.id.device_marketing_name);
+        marketingName.setText(DeviceMarketingName.getInstance(this).getDeviceMarketingName(false));
+
+        TextView marketingNameWithBranding = (TextView) findViewById(R.id.device_marketing_name_with_branding);
+        marketingNameWithBranding.setText(DeviceMarketingName.getInstance(this).getDeviceMarketingName(true));
     }
 
     @Override
