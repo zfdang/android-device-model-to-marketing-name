@@ -30,10 +30,10 @@ https://support.google.com/googleplay/android-developer/answer/6154891?hl=en
 
 The extracted results are stored as Java properties:
 
-    device_model_to_marketing_name/src/main/assets/branding.properties
-    device_model_to_marketing_name/src/main/assets/marketingName.properties
+[device_model_to_marketing_name/src/main/assets/branding.properties](https://github.com/zfdang/android-device-model-to-marketing-name/blob/master/device_model_to_marketing_name/src/main/assets/branding.properties)
+[device_model_to_marketing_name/src/main/assets/marketingName.properties](https://github.com/zfdang/android-device-model-to-marketing-name/blob/master/device_model_to_marketing_name/src/main/assets/marketingName.properties)
   
-You can add entry to these two files to enrich the database.
+You can add entries to these two files to enrich the database.
 
 NOTE: please make sure all strings are escaped properly: 
     
