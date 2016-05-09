@@ -35,5 +35,8 @@ The extracted results are stored as Java properties:
   
 You can add entry to these two files to enrich the database.
 
+NOTE: please make sure all strings are escaped properly: 
+    
+    http://stackoverflow.com/questions/2406975/how-to-escape-the-equals-sign-in-properties-files
 
 
