@@ -8,7 +8,7 @@ download demo: [device-model-to-marketing-name-demo.apk](device-model-to-marketi
 
 # How to use this library in your application
 
-## 1. add "multiple-images-selector" dependency
+## 1. add "device-model-to-marketing-name" dependency
 
 This library is now available in jcenter.
 
@@ -19,9 +19,11 @@ Add "device-model-to-marketing-name" as dependency to your project:
 ## 2. Use it in your application:
 
     // Build.MODEL = "SM-G9200"
-    String marketingName = DeviceMarketingName.getInstance(this).getDeviceMarketingName(false);
+    boolean withBrandName = false;
+    String marketingName = DeviceMarketingName.getInstance(this).getDeviceMarketingName(withBrandName);
     // marketingName is now "Galaxy S6"
-    String marketingNameWithBrand = DeviceMarketingName.getInstance(this).getDeviceMarketingName(true);
+    withBrandName = true;
+    String marketingNameWithBrand = DeviceMarketingName.getInstance(this).getDeviceMarketingName(withBrandName);
     // marketingNameWithBrand is now "Samsung-Galaxy S6"
 
 ## 3. Contribute to this library
