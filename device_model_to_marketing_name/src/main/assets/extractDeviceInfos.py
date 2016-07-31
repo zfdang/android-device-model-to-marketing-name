@@ -13,6 +13,7 @@ import sys
 import getopt
 import csv
 import os
+import codecs
 
 ##################################
 # settings have been moved to config.py
@@ -35,11 +36,14 @@ def processFile(infile):
         sys.exit(0)
 
     unkown_accounts = {}
-    csvReader = csv.reader(open(infile))
+    # csvReader = csv.reader(open(infile))
+    csvReader = csv.reader(codecs.open(infile, 'rU', 'utf-16'))
     brandWriter = open("branding.properties", "w")
     marketingWriter = open("marketingName.properties", "w")
     counter = 0
+    print csvReader
     for row in csvReader:
+
         if len(row) != 4:  # make sure row is parsed correctly
             continue
 

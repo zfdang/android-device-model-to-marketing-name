@@ -14,7 +14,7 @@ This library is now available in jcenter.
 
 Add "device-model-to-marketing-name" as dependency to your project:
 
-    compile 'com.zfdang.devicemodeltomarketingname:device-model-to-marketing-name:1.0.0'
+    compile 'com.zfdang.devicemodeltomarketingname:device-model-to-marketing-name:1.0.1'
 
 ## 2. Use it in your application:
 
