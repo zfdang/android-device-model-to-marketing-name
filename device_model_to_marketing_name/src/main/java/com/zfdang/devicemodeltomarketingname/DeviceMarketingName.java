@@ -46,7 +46,7 @@ public class DeviceMarketingName {
             }
         }
 
-        marketingNameProp.list(System.out);
+//        marketingNameProp.list(System.out);
 
         if (withBranding && brandingProp == null) {
             brandingProp = new Properties();
